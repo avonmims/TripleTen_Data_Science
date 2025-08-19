@@ -68,6 +68,7 @@ def calculate_visitors_from_conversion(percentage, customers):
 
 if __name__ == '__main__':
 
+    # update variables below for business metrics
     revenue = 12345
     cost_of_goods_sold = 678
     operating_expenses = 90
@@ -75,7 +76,7 @@ if __name__ == '__main__':
     taxes_and_loans = (revenue * tax_rate) + 1234
     investment = 5678
 
-    print(f'Gross Profit: ${gross_profit(revenue, cost_of_goods_sold)}')
+    print(f'Gross Profit: ${gross_profit(revenue, cost_of_goods_sold)}') 
     print(f'Gross Profit Margin: {gross_profit_margin(revenue, cost_of_goods_sold):.2%}')
     print(f'Operating Profit: ${operating_profit(revenue, cost_of_goods_sold, operating_expenses)}')
     print(f'Operating Profit Margin: {operating_profit_margin(
@@ -85,5 +86,11 @@ if __name__ == '__main__':
     print(f'Return on Investment: {return_on_investment_full(
         revenue, cost_of_goods_sold, operating_expenses,
                               taxes_and_loans, investment):.2%}')
+    
+    # update variables below for conversion rate
+    visitors = 12345
+    customers = 678
+
+    print(f'Conversion Rate: {conversion(customers, visitors):.2%}')
 
 ########## Output in terminal ##########
